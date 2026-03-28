@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TASTY Bakery Description Goes Here">
+    <meta name="keywords" content="doughnuts, cakes, croissants, macarons, pies">
+    <meta name="author" content="Your Name Goes Here">
+    <title>Yummy Baked Goods | TASTY Bakery | Catering </title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:wdth,wght@100..125,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!--1. Header – gives the company name and the site navigation menu-->
+    <header class="bg-colored"> <!--bg-colored: is to change the background color of the box-->
+        <div class="container"> <!-- container: used as a gen style throughout page-->
+            <div id="branding"> <!-- branding: to style head properly-->
+                <h1><span class="highlight">TASTY</span> Bakery</h1>
+                <!--span highlight will be used to change color of text-->
+            </div>
+
+            <nav>
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle">
+                <ul>
+                    <li><a href="index.html">Home</a></li> <!--current class to highlight current page-->
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li class="current"><a href="catering.html">Catering</a></li>
+                    <li><a href="order.html">Order</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--2. Newsletter – give the user an input box to type in their email address and submit it to receive your company newsletter-->
+    <section id="newsletter" class="bg-colored">
+        <div class="container">
+            <h3>Subscribe to Newsletter</h3>
+            <form>
+                <input type="email" name="email_address" placeholder="Enter email..." required>
+                <button type="submit" name="submit" class="button-1">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!--3. content for the Catering.html page -->
+    <section id="content">
+        <div class="container">
+            <!-- maintain main and aside inside container, to apply the flex-direction: row -->
+            <main>
+                <h2 class="paige-title">Catering</h2>
+                <div class="catering-item">
+                    <h3>Croissant Sandwhich Platter</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porta consequat neque ac tempor.
+                        Praesent mollis auctor nunc vel faucibus.</p>
+                    <p>Pricing: $8/person</p>
+                </div>
+                <div class="catering-item">
+                    <h3>Office Doughnut Party</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porta consequat neque ac tempor.
+                        Praesent mollis auctor nunc vel faucibus.</p>
+                    <p>Pricing: $9/person</p>
+                </div>
+                <div class="catering-item">
+                    <h3>Birthday Cake Party</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porta consequat neque ac tempor.
+                        Praesent mollis auctor nunc vel faucibus.</p>
+                    <p>Pricing: $7/person</p>
+                </div>
+            </main>
+
+            <aside class="bg-colored" id="order-now">
+                <h2>Order now</h2>
+                <p>To place and order, click the Order menu in the title bar</p>
+            </aside>
+        </div>
+
+    </section>
+
+
+
+    <!--5. Footer – show the copyright -->
+    <footer>
+        <div class="container">
+            <p>Copyright &copy; 2025 - Yummy Baked Goods</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

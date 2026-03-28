@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TASTY Bakery Description Goes Here">
+    <meta name="keywords" content="doughnuts, cakes, croissants, macarons, pies">
+    <meta name="author" content="Your Name Goes Here">
+    <title>Yummy Baked Goods | TASTY Bakery | Tasty Recipes </title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:wdth,wght@100..125,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Main site CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+
+</head>
+
+<body>
+    <!--1. Header -->
+    <header class="bg-colored"> <!--bg-colored: is to change the background color of the box-->
+        <div class="container"> <!-- container: used as a gen style throughout page-->
+            <div id="branding"> <!-- branding: to style head properly-->
+                <h1><span class="highlight">TASTY</span> Bakery</h1>
+                <!--span highlight will be used to change color of text-->
+            </div>
+
+            <nav>
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle">
+                <ul>
+                    <li><a href="index.html">Home</a></li> <!--current class to highlight current page-->
+                    <li><a href="about.html">About</a></li>
+                    <li class="current"><a href="recipes.html">Recipes</a></li>
+                    <li><a href="catering.html">Catering</a></li>
+                    <li><a href="order.html">Order</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--2. Newsletter -->
+
+    <section id="newsletter" class="bg-colored">
+        <div class="container">
+            <h3>Subscribe to Newsletter</h3>
+            <form>
+                <input type="email" name="email-address" placeholder="Enter email..." required>
+                <button type="submit" name="submit" class="button-1">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!--3. Order Form Content -->
+    <section id="content">
+        <div class="container">
+            <main id="recipe">
+                <h2 class="paige-title">Tasty Recipies</h2>
+
+                <h1>Oatmeal Rasin Cookies</h1>
+                <p>Cookies are one of my favourite foods. Here is an old-school recipe for non low fat cookies.
+
+                <div id="recipe-body">
+                    <div class="body-left">
+                        <h3>Ingredients</h3>
+                        <ul>
+                            <li>1 cup (230g) unsalted butter, softened to room temperature</li>
+                            <li>1 cup (200g) packed light or dark brown sugar</li>
+                            <li>1/4 cup (50g) granulated sugar 2 large eggs*</li>
+                            <li>1 Tablespoon pure vanilla extract (yes, Tablespoon!)</li>
+                            <li>1 and 1/2 cups (190g) all-purpse flour (spoon & leveled)</li>
+                            <li>1 teaspoon baking soda</li>
+                            <li>1/2 teaspoon salt</li>
+                            <li>3 cups (240g) old-fashioned whole rolled oats</li>
+                            <li>1 cup (140g) raisins*</li>
+                        </ul>
+                    </div>
+
+                    <div class="body-right">
+                        <h3>Method</h3>
+                        <ol>
+                            <li>Usinga mixer, cream the softened butter and both sugars together until smooth. Add the
+                                eggs and mix 1 minute. Add the vanilla and molasses and mix until combined. Set aside.
+                            </li>
+                            <li>In a separate bowl, toss the flour, baking soda, cinnamon, and salt together. Add to the
+                                wet ingredients and mic on low until combined. Beat on the oats, raisins. Dough will be
+                                thick, yet very sticky. Chill the dough for 30-60 minutes.</li>
+                            <li>Preheat oven to 350°F (177°C). Line two large baking sheets with parchment paper or
+                                silicone baking mats. Set aside.</li>
+                            <li>Roll balls of dough (about 2 tablespoons of dough per cookie) and place 2 inches apart
+                                on the baking sheets. Bake for 12-13 minutes until lightly browned on the sides. The
+                                centers will look very soft and undone. Remove from the oven and let cool on baking
+                                sheet for 5 minutes before transferring to a wire rack to cool completely. The cookies
+                                will continue to "set" on the baking sheet during this time.</li>
+                        </ol>
+                    </div>
+
+                </div>
+                <!-- PREGUNTARRRR: more <h3>'s, 3x <img> and 3x <a> -->
+                <section id="recipe-boxes">
+                    <h3>Results in Photos</h3>
+                    <div class="results-container">
+                        <div class="step-box bg-colored">
+                            <p>Making the Dough</p> <!--We want it in bold-->
+                            <img src="images/make-dough.jpeg" alt="Chocolate Chip Dough">
+                        </div>
+                        <div class="step-box bg-colored">
+                            <p>Putting the Dough on the Cookie Sheet</p> <!--We want it in bold-->
+                            <img src="images/dough-on-sheet.jpg" alt="Chocolate cookie dough on the Cookie Sheet">
+                        </div>
+                        <div class="step-box bg-colored">
+                            <p>The end Result</p> <!--We want it in bold-->
+                            <img src="images/homemade-chocolate-chip-cookies.jpeg" alt="Chocolate Chip after Baking">
+                        </div>
+                    </div>
+                </section>
+
+                <div id="other-recipies">
+                    <h3>Other Good Recipes</h3>
+                    <p>Some other good cookie recipes:</p>
+                    <div><a href="https://www.simplyrecipes.com/recipes/oatmeal_raisin_cookies/#:~:text=SAVE-,The%20Best%20Oatmeal%20Raisin%20Cookies,-PREP%20TIME"
+                            target="_blank">Oatmeal
+                            Raisin Cookies</a></div>
+                    <div><a href="https://sallysbakingaddiction.com/shortbread-wedge-cookies/#:~:text=SUBSCRIBE-,Shortbread%20Wedge%20Cookies,-5%20Stars"
+                            target="_blank">Shortbread
+                            Cookies</a></div>
+                    <div><a href="https://sallysbakingaddiction.com/soft-peanut-butter-cookie-recipe/#:~:text=SUBSCRIBE-,Soft%20%26%20Thick%20Peanut%20Butter%20Cookies,-5%20Stars"
+                            target="_blank">Peanut
+                            Butter Cookies</a></div>
+                </div>
+
+            </main>
+
+        </div>
+    </section>
+
+
+
+    <!--5. Footer – show the copyright -->
+    <footer>
+        <div class="container">
+            <p>Copyright &copy; 2025 - Yummy Baked Goods</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

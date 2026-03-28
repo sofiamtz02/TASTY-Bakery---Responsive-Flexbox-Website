@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TASTY Bakery Description Goes Here">
+    <meta name="keywords" content="doughnuts, cakes, croissants, macarons, pies">
+    <meta name="author" content="Your Name Goes Here">
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:wdth,wght@100..125,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>Yummy Baked Goods | TASTY Bakery | Welcome </title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome/css/all.css">
+</head>
+
+<body>
+    <!--1. Header – gives the company name and the site navigation menu-->
+    <header class="bg-colored"> <!--bg-colored: is to change the background color of the box-->
+        <div class="container"> <!-- container: used as a gen style throughout page-->
+            <div id="branding"> <!-- branding: to style head properly-->
+                <h1><span class="highlight">TASTY</span> Bakery</h1>
+                <!--span highlight will be used to change color of text-->
+            </div>
+
+            <nav>
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle">
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <!--current class to highlight current page-->
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="catering.html">Catering</a></li>
+                    <li><a href="order.html">Order</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <!--2. Showcase – list what you would like to showcase for this website.-->
+    <section id="showcase">
+        <div class="showcase-inner">
+            <div class="container">
+                <h2>The Most TASTY Treats</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque neque nec nulla
+                    semper, quis elementum libero aliquet. Aenean vitae tincidunt lorem. Nam lacinia nulla quis
+                    malesuada pretium. Mauris tincidunt elementum sodales. Fusce rutrum consectetur finibus.
+                    Pellentesque placerat imperdiet sem, vitae dapibus lectus volutpat ac. Integer egestas elit non
+                    iaculis tempus. Etiam dapibus efficitur facilisis. Sed eleifend malesuada scelerisque.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--3. Newsletter – give the user an input box to type in their email address and submit it to receive your company newsletter-->
+    <section id="newsletter" class="bg-colored">
+        <div class="container">
+            <h3>Subscribe to Newsletter</h3>
+            <form>
+                <input type="email" name="email_address" placeholder="Enter email..." required>
+                <button type="submit" name="submit" class="button-1">Subscribe</button>
+            </form>
+        </div>
+
+    </section>
+
+    <!--4. Boxes – showcase a few products in a separate box within this section -->
+    <section id="boxes">
+        <div class="container">
+            <div class="box"> <!-- multiple div class box needed, in order to align elements in a row -->
+                <i class="fas fa-birthday-cake"></i>
+                <!-- <img src="images/cake.png" alt="Cakes"> -->
+                <h3>Cakes</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="box">
+                <i class="fab fa-cuttlefish"></i>
+                <!-- <img src="images/doughnut.png" alt="Doughnut"> -->
+                <h3>Doughnut</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-cookie-bite"></i>
+                <!-- <img src="images/cookie.png" alt="Cookie"> -->
+                <h3>Cookie</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--5. Footer – show the copyright -->
+    <footer>
+        <div class="container">
+            <p>Copyright &copy; 2025 - Yummy Baked Goods</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TASTY Bakery Description Goes Here">
+    <meta name="keywords" content="doughnuts, cakes, croissants, macarons, pies">
+    <meta name="author" content="Your Name Goes Here">
+    <title>Yummy Baked Goods | TASTY Bakery | Order </title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:wdth,wght@100..125,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Main site CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- Page-specific CSS (Order page overrides) -->
+    <link rel="stylesheet" href="css/order.css" type="text/css">
+
+
+</head>
+
+<body>
+    <!--1. Header -->
+    <header class="bg-colored"> <!--bg-colored: is to change the background color of the box-->
+        <div class="container"> <!-- container: used as a gen style throughout page-->
+            <div id="branding"> <!-- branding: to style head properly-->
+                <h1><span class="highlight">TASTY</span> Bakery</h1>
+                <!--span highlight will be used to change color of text-->
+            </div>
+
+            <nav>
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle">
+                <ul>
+                    <li><a href="index.html">Home</a></li> <!--current class to highlight current page-->
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="catering.html">Catering</a></li>
+                    <li class="current"><a href="order.html">Order</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--2. Newsletter -->
+    <section id="newsletter" class="bg-colored">
+        <div class="container">
+            <h3>Subscribe to Newsletter</h3>
+            <form>
+                <input type="email" name="email-address" placeholder="Enter email..." required>
+                <button type="submit" name="submit" class="button-1">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!--3. Order Form Content -->
+    <section id="content">
+        <div class="container">
+            <main id="order">
+                <h1 id="page-title">Order Form</h1>
+
+                <p class="highlight-paragraph">Please fill in the form below. Payment is made at time of delivery or
+                    pickup.</p>
+                <article id="order-form">
+
+                    <form class="get-order" action="" method="post">
+                        <!-- aded div to each, so its easier to br -->
+                        <!--Customer information -->
+                        <div class="input-section">
+                            <label for="first-name">First Name:</label>
+                            <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                        </div>
+
+                        <div class="input-section">
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                        </div>
+
+                        <div class="input-section">
+                            <label for="email-address">Email Address:</label>
+                            <input type="email" id="email-address" name="email-address" placeholder="example@email.com"
+                                required>
+                        </div>
+
+                        <div class="input-section">
+                            <label for="phone-numbe">Phone Number:</label>
+                            <input type="text" id="phone-numbe" name="phone-number" placeholder="(123)-456-7890"
+                                required>
+                        </div>
+
+                        <!--5. Delivery Method -->
+                        <div class="delivery-section">
+                            <h2>Delivery Details</h2>
+                            <label for="delivery-type">Via:</label>
+                            <select name="delivery-type" id="delivery-type" class="delivery-type">
+                                <option value="curbside-pickup">Curbside Pickup</option>
+                                <option value="pickup-in-store">Pickup In Store</option>
+                                <option value="deliver-via-courier">Deliver Via Courier ($25 Charge)</option>
+                            </select>
+                        </div>
+
+                        <!--6. Order Items -->
+                        <div>
+                            <h2>Order Items</h2>
+
+                            <div class="order-section">
+                                <input type="checkbox" name="macarons" id="macarons" class="checkboxes" value="yes">
+                                <label for="macarons">Macarons ($1 each)</label>
+                                <select name="macarons-type" id="macarons-type">
+                                    <option value="assorted">Assorted</option>
+                                    <option value="chocolate">Chocolate</option>
+                                    <option value="vanilla">Vanilla</option>
+                                    <option value="strawberry">Strawberry</option>
+                                </select>
+                                <input type="number" name="macarons-qty" class="qty" min="0" max="100" value="0">
+                            </div>
+
+                            <div class="order-section">
+                                <input type="checkbox" name="doughnut" id="doughnut" class="checkboxes" value="yes">
+                                <label for="doughnut">Doughnuts ($2 each)</label>
+                                <select name="doughnut-type" id="doughnut-type">
+                                    <option value="assorted">Assorted</option>
+                                    <option value="glaced">Glaced</option>
+                                    <option value="sprinkles">Sprinkles</option>
+                                </select>
+                                <input type="number" name="doughnut-qty" class="qty" min="0" max="100" value="0">
+                            </div>
+
+                            <div class="order-section">
+                                <input type="checkbox" name="croissant" id="croissant" class="checkboxes" value="yes">
+                                <label for="croissant">Croissants ($2 each) </label>
+                                <select name="croissant-type" id="croissant-type">
+                                    <option value="traditional">Traditional</option>
+                                    <option value="plain">Plain</option>
+                                    <option value="butter">Butter</option>
+                                    <option value="chocolate">Chocolate</option>
+                                </select>
+                                <input type="number" name="croissants-qty" class="qty" min="0" max="100" value="0">
+                            </div>
+
+                            <!-- a maximum of 3 for the two larger priced items.-->
+                            <div class="order-section">
+                                <input type="checkbox" name="pies" id="pies" class="checkboxes" value="yes">
+                                <label for="pies">Pies ($10 each)</label>
+                                <select name="pies-type" id="pies-type">
+                                    <option value="apple">Apple</option>
+                                    <option value="pumpkin">Pumpkin</option>
+                                    <option value="blueberry">Blueberry</option>
+                                    <option value="cherry">Cherry</option>
+                                </select>
+                                <input type="number" name="pies-qty" class="qty" min="0" max="3" value="0">
+                            </div>
+
+                            <div class="order-section">
+                                <input type="checkbox" name="cakes" id="cakes" class="checkboxes" value="yes">
+                                <label for="cakes">8" Cakes ($25 each) </label>
+                                <select name="cakes-type" id="cakes-type">
+                                    <option value="lemon">Lemon</option>
+                                    <option value="chocolate">Chocolate</option>
+                                    <option value="vanilla">Vanilla</option>
+                                    <option value="tres-leches">Tres Leches</option>
+                                </select>
+                                <input type="number" name="cake-qty" class="qty" min="0" max="3" value="0">
+                            </div>
+                        </div>
+
+                        <!--7. Order Instructions - must be a "textarea" element that is 5 rows by 60 columns.-->
+                        <div class="instruction-section">
+                            <h2>Order Instructions</h2>
+                            <p for="order-instructions">If you have a preference for any of the above ordered items,
+                                please specify below:</p>
+                            <textarea id="order-instructions" class="order-instructions" name="order-instructions"
+                                rows="5" cols="60" placeholder="Enter Comments here"></textarea>
+                        </div>
+
+
+                        <!--8. Payment Type - Three input "radio" elements (Debit, Cash, Visa/Mastercard) displayed as shown 
+                in the diagram.-->
+                        <div class="payment-section">
+                            <h2>Payment Type</h2>
+                            <!-- have all same name, so that you can only purchase method -->
+                            <input type="radio" name="payment-type" id="payment-type-debit" class="radio-size"
+                                value="Debit">
+                            <!--class has same name so the css changes for all 3-->
+                            <label for="payment-type-debit">Debit</label>
+
+                            <input type="radio" name="payment-type" id="payment-type-cash" class="radio-size"
+                                value="Cash">
+                            <label for="payment-type-cash">Cash</label>
+
+                            <input type="radio" name="payment-type" id="payment-type-visa-master" class="radio-size"
+                                value="Visa-Mastercard" checked>
+                            <label for="payment-type-visa-master">Visa/Mastercard</label>
+                        </div>
+
+                        <!--9. "Place Order Now" button - button element with the text of "Place Order Now"-->
+                        <div id="place-order-section"> <!-- id="place-order-section"-->
+                            <button class="button-1">Place Order now</button>
+                        </div>
+
+                    </form>
+                </article>
+            </main>
+
+        </div>
+    </section>
+
+
+
+    <!--5. Footer – show the copyright -->
+    <footer>
+        <div class="container">
+            <p>Copyright &copy; 2025 - Yummy Baked Goods</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
