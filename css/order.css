@@ -1,0 +1,187 @@
+:root {
+    --dark-purple: rgb(102, 38, 101);
+    --hot-pink: rgb(197, 26, 132);
+    --pink: #FFC0CB;
+    --light-pink: rgb(247, 233, 236);
+    --white: #ffffff; 
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    /* background-color: #f4f4f4; */
+}
+
+/* ---------------header  and paragrah style */
+/*override container class*/
+section#content .container {
+    align-items: center; /*align whole content block to center*/
+    width: 100%;  
+}
+
+#order h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    width: 100%;
+}
+
+/*order form h2*/
+article h2 {
+    padding-top: 14px;
+    padding-bottom: 8px;
+    color: #333;
+    width: 100%;
+}
+
+/*order form parapgrapgs*/
+.highlight-paragraph {
+    text-align: center;
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    margin: 0px 20px 15px 20px; /*need margin on sides so it doesnt overflow*/
+}
+
+/* background for page */
+#order-form .get-order {
+    background-color: var(--light-pink);
+    padding: 15px; /*15px padding for mobile to not overflow */
+    border: 2px solid var(--hot-pink);
+    border-radius: 30px;
+}
+
+/*---------------input elements (name, email, phone) */
+.input-section {
+    padding-top: 12px;
+}
+
+.input-section label {
+    font-weight: bold; /*bold for name, email and phone label*/
+    display: block;/* inline block spaces for label*/
+    padding-bottom: 3px;/* space between label and input-type*/
+}
+
+/* all text, email, number, and select inputs */
+.input-section input[type="text"],
+.input-section input[type="email"],
+.delivery-section select,
+.order-section select,
+.qty {
+    font-size: 15px;
+    padding: 9px 6px;
+    width: 95%;
+    margin: 3px 0;
+    /* 
+    width: 300px;
+    margin: 3px 0; 
+    */
+
+}
+
+
+/* design for emial/text input field*/
+.input-section [type="text"],
+.input-section [type="email"] {
+    color: darkblue;
+    border-radius: 10px;
+    border-color: lightgrey;
+    border-style: solid;
+
+}
+
+/*---------------| SELECT delivery method*/
+.delivery-section label {
+    padding-right: 5px;
+}
+
+/*---------------| SELECT checkbox ORDER items  */
+.order-section {
+    margin-top: 5px;
+    padding: 4px 0px;
+}
+
+/*labels for order and payment (next to it boxes)-------------*/
+.order-section label,
+.payment-section label {
+    padding: 10px;
+}
+
+/*checkbox and radio-------------*/
+.checkboxes,
+.radio-size {/* All of order items have the class checkboxes, which will modify the scale of all 5 items */
+    transform: scale(1.5);
+    /* vertical-align: top;*/
+    /* margin: 0px 10px;*/
+    /* space to the right, for text*/
+}
+
+
+/* delivery select option, and order item select option and quantity number field*/
+.delivery-section select,
+.order-section select {
+    width: 340px;/*override width of boxes to smaller */
+}
+
+
+.qty {
+    width: 324px;/*override width of boxes to smaller */
+}
+
+/*----------------ORDER INSTRUCTIONS*/
+.order-instructions {
+    border-radius: 15px;/* round the corners*/
+    color: darkblue;
+    margin-top: 6px;/* space between label and textarea aboth */
+    max-width: 94%;
+    min-width: 94%;
+    padding: 10px;
+    width: 100%;
+
+    /* resize: none; it bothers me we can resize textarera, but wasnt sure if allowed */
+}
+
+
+/*----------------PLACE ORDER*/
+/*done together with order section*/
+
+/*----------------Button SUBMIT*/
+
+#place-order-section .button-1 {
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px 0px;/* top/bottom, left/right*/
+    padding: 10px;/* padding for button to look centered */
+    text-align: center;
+    width: 100%;
+
+    /*cursor: pointer;*/
+}
+
+
+@media (min-width: 768px) {
+    #order-form .get-order {
+    background-color: var(--light-pink);
+    padding: 15px 30px;
+    border: 2px solid var(--hot-pink);
+    border-radius: 30px;
+    
+    }
+    .input-section input[type="text"],
+    .input-section input[type="email"],
+    .delivery-section select,
+    .order-section select,
+    .qty {
+        font-size: 15px;
+        padding: 9px 6px;
+        width: 97%; 
+        
+        margin: 3px 0; 
+    }
+
+    .delivery-section select,
+    .order-section select,
+    .qty {
+        width: 30%;/*override width of boxes to smaller */
+    }
+
+}

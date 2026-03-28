@@ -1,0 +1,535 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+/* |------------- COLOR -------------| */
+:root {
+    --dark-purple: rgb(102, 38, 101);
+    --hot-pink: rgb(197, 26, 132);
+    --pink: #FFC0CB;
+    --lake-blue: #748CAB;
+    --white: #ffffff; 
+    
+}
+
+/* |------------- Home Page Styling -------------| */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 0.93rem; /* 0.93rem = 16 * 0.93 = 15 */
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--white);
+}
+
+/*font for headers*/
+h1, h2, h3 {
+  font-family: "Sour Gummy", sans-serif;
+}
+
+
+/* purple elements */
+.bg-colored {
+    background-color: var(--dark-purple);
+    color: var(--white);
+}
+
+
+/* general container: style of page */
+.container {
+    display: flex; /*format all children using flexbox */
+    flex-direction: column; /*orient the children in a vertical row for mobile */
+    align-items: center; /*vertical alignment, x-axis */
+    justify-content: center; /* center the items horizontally, y-axis centered */
+    margin: auto; /*margin shows on L/R*/
+    overflow: hidden; /*if goes ourside block, it stays inside*/
+    text-align: center;
+    width: 80%;
+}
+
+/* default ul has padding and margin, this removes it */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* |------------- header -------------| */
+header {
+    border-bottom: 3px solid var(--pink); /*the pink line under header*/
+    padding: 20px 0; /*T/B on header as a whole*/
+}
+
+header a {
+    color: var(--white); /* white text for anchor */
+    text-decoration: none; /* no underline */
+    text-transform: uppercase; /* convert to uppercase ABC */
+    font-size: 1rem; /* 15px font size, makes it bigger */
+}
+
+header li {
+    padding: 0 20px; /* L/R to separate menu items from border left*/
+}
+
+/* styling company name and menu --------|*/
+header h1 {
+    margin: 0;
+    font-weight: normal;
+}
+
+
+/* span with class="highlight" and the .current anchor tag in the nav will be pink and bold */
+header h1 .highlight,
+header .current a {
+    color: var(--pink);
+}
+
+/* menus horizontal and aligned to the right side of the page*/
+header nav { 
+    margin-right: auto; /* (this will center the menu on the page) */
+    margin-left: auto; /* push this element to the right */
+    /* ul elements are pushed to the right of the nav block */
+}
+
+header nav ul {
+    list-style: none; /* remove the bullets */
+    display: flex; /* format all children as flexbox elements */
+    flex-direction: row; /* orient the children in a horizontal row */
+    justify-content: center; /* center the items horizontally */
+    
+    /* remove default */
+    margin: 0;
+    padding: 0;
+}
+
+/* triggers nav links to change color when mouse hovers over element */
+nav a:hover {
+    color: var(--pink); 
+}
+
+/* |------------- 2. section -------------| */
+
+
+/* HERO BOX: Styling the Showcase Section */
+section#showcase {  
+    min-height: 400px; /* set the minimum height of the box */
+    background-image: url('../images/bakery-hero-image-1920.jpg'); /* url is relative to the stylesheet file location*/
+    background-size: cover; /* adjusts to cover the whole space and show repeated copy */
+    background-position: center; /* position the background to the center of the block */
+    text-align: center; /* align text to the center */
+    color: var(--white);
+    display: flex;
+    flex-direction: row; /* the whole text block, from left to right*/
+}
+
+/* the inner container of showcase is to apply linear gradient background color behind the showcase text */
+section#showcase .showcase-inner {
+    display: block;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5); /*give it a black shadow */
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)); /*add linear gradient to shadow*/
+    display: flex; /* horizontaly center, in y-axis */
+    flex-direction: row; 
+}
+
+/* overide flex-direction to stack the two text elements in a column*/
+section#showcase .container {
+    flex-direction: column; /*for h2 to be ontop of p, like a stack */
+}
+
+/* Styling the showcase text sizes ---------| */
+
+/*Styling the showcase h2 */
+section#showcase h2 {
+    font-family: "DynaPuff", system-ui;
+    font-size: 4em; /*for mobile size*/
+    font-weight: normal;
+    text-shadow: 0px 0px 30px #444;
+    margin-bottom: 30px;
+}
+/*Styling the showcase paragraph */
+section#showcase p {
+    font-size:1.25rem; /* 20px*/
+}
+
+/* |------------- 3. Newsletter Styling -------------| */
+/*ALREADY DONE: the container class takes care of the horizontal positioning*/
+
+section#newsletter {
+    padding: 15px 0;
+}
+
+section#newsletter h3 {
+    font-family: "Roboto", sans-serif;
+}
+
+/*style the the input box*/
+section#newsletter input {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/*the form (use the margin to push it to the right right) */
+section#newsletter form {
+    margin-right: auto; /* will help center from the right*/
+    margin-left: auto; /*pushes form to the right with a gap on the left*/
+}
+
+/*the button (magenta, no border with white text) */
+.button-1 {
+    height: 38px; /*same height as input*/
+    background-color: var(--hot-pink);
+    border: none;
+    padding: 0 20px; /* L/R */
+    color: var(--white);
+}
+
+/* |------------- 4. Boxes Styling -------------| */
+/*You will now add some margins, padding, and limit the logo image sizes*/
+
+section#boxes { 
+    margin-top: 20px; /*the whole boxes section has a padding on top to have space after newsletter*/
+}
+
+section#boxes .box { /*apply to all boxes*/
+    padding: 10px; /*evenly they all have same padding*/
+    text-align: center; /*all elements within one box will allign to center (works like text in a cell)*/
+}
+
+
+/* box of images but now we use fa images
+    section#boxes .box img { /*boxes images will have now the same size
+    width: 90px;
+} */
+
+section#boxes .box .fa-birthday-cake, .box .fa-cuttlefish, .box .fa-cookie-bite {
+    font-size: 5em;
+    color: var(--hot-pink)
+}
+
+
+/*NOTE: You even don't need to give the boxes a size. By default, will be treated as equal width as connent not very different */
+/* |---------------------------------- PAGE ABOUT ------------------------------------| */
+
+/* |------------- a. content about styling -------------| */
+section#content .container {
+    /*this style only applies to the container section inside the 
+    section ith an id of "content" */
+    align-items: start; /*maintains both blocks at top of aligned page */
+    text-align: left; /*text of conatiner is all to the left, including title*/
+    margin: 1rem auto; /*margin block of about us + what we do */
+}
+
+/**/
+aside {
+    padding: 0 1rem 1rem 1rem; /* add padding to the colum but not on top. */
+    margin-left: 0; /* add margin to left, to give space between 'About us' and 'What We Do' */
+    /* margin-left: 3rem; 3rem for laptop */
+    /* width: 100%; for mobile, to take whole width of space, to not have Right Blank-Space */
+}
+
+/* |---------------------------------- PAGE RECIPIES ------------------------------------| */
+/* main#recipe {
+    max-width: 90%;
+    margin: 40px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+    padding: 40px;
+}  */
+
+#recipe-body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+#recipe-body ul {
+    text-decoration: none;
+}
+
+#recipe-body ol {
+    margin-left: 10px;
+}
+/*  for laptop version (correct sizeing of recipy 
+#recipe-body .body-right {
+    flex: 1 0 40%;
+}  */
+
+/*results in photos*/
+#recipe-boxes {
+    padding: 18px 0;
+    text-align: center;
+}
+
+.results-container {
+    display: flex;
+    justify-content: space-between; /* even spacing between boxes */
+    flex-wrap: wrap; /* makes it responsive */
+    width: 94%;
+    padding: 10px 0;
+    margin: 0 auto;
+
+    flex-direction: column;
+    align-content: center;
+    /* gap: 20px; */
+}
+
+.step-box {
+    /* background-color: #D7CBE7; */
+    display: flex;
+    justify-content: space-evenly; /* even spacing between text and image */
+    align-items: center;
+    flex-direction: column; /*text on top of image*/
+    
+    border-radius: 10px; /*rounded edges of box*/
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5); /*gives shadow to box of photos*/ 
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    width: 60%; /* keeps consistent width */
+}
+
+.step-box p {
+    margin-bottom: 20px;
+    /* color: #5A2312; */
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+}
+
+.step-box img {
+    border-radius: 5px;
+    height: 200px; /*bigger bc on phone*/
+    width: 200px;
+    margin: 5px;
+}
+
+/* |---------------------------------- PAGE CATERING ------------------------------------| */
+.catering-item {
+    margin-bottom: 10px; /*make red around*/
+    padding: 15px;
+    background-color: #fae4e4; /*pinkish background for blocks of catering*/
+}
+
+/*styling for all page titles*/
+.paige-title {
+    font-weight: bold; /*make bold title */
+    color: #333; /*not dark black, greyish*/
+}
+
+.catering-item h3, .catering-item p {
+    font-weight: normal; /*get rid of bold*/
+    color: #333; /*not dark black, greyish*/
+}
+
+/*aside box*/
+
+/*give box a full width to ocupy the whole space*/
+#order-now {
+    width: 100%;
+}
+
+/*make paragprah not overflow by giving smaller width to adjust*/
+#order-now p {
+    width: 90%;
+}
+
+/* |---------------------------------- PAGE ORDER ------------------------------------| */
+
+
+
+/* |------------- 5. Footer Styling -------------| */
+
+footer {
+    padding: 20px; /*to give height to the footer*/
+    margin-top: 20px; /*adds non color margin on top to have space after boxes*/
+    color: var(--white);
+    text-align: center; /*?, given .container text block is centered with justify-content*/
+    background-color: var(--hot-pink); /*pink background*/
+}
+
+/*override the width of the texture on mobile*/
+textarea {
+    max-width: 200px;
+}
+
+/* |---------------------------------- PAGE CATERING ------------------------------------| */
+
+
+/* |---------------------------------- Style for Desktop ------------------------------------| */
+
+/*restore the showcase h1 height*/
+@media (min-width: 768px) {
+    section#showcase h2 {
+        font-size: 6em;;
+    }
+
+    /* restore width based upon textarea "cols" */
+    textarea {
+        max-width: inherit;
+    }
+
+
+    /* tell those flex elements to stack up side-by-side */
+    .container {
+        flex-direction: row;
+    }
+
+    /* this will stop the newsletter from centering in the section (and instead align it to the right) */
+    section#newsletter form {
+        margin-right: 0;
+    }
+
+    /* give the aside some left whitespace */
+    aside {
+        margin-left: 3rem;
+        /* width: auto; make aside width to normal */
+    }
+
+    /* for recipe style*/
+    .results-container {
+        flex-direction: row;
+        align-content: center;
+    }
+
+    #recipe-body { 
+    flex-direction: row; 
+    }
+
+    #recipe-body .body-right {
+    /* Three values: flex-grow | flex-shrink | flex-basis */
+        flex: 1 0 60%;
+    } 
+
+    .step-box {
+    width: 26%;
+    }
+
+    .step-box img {
+        height: 180px;
+        width: 180px;
+    
+    }
+    
+    /*catering aside box- reset the mobile modifications with auto */
+    #order-now, #order-now p {
+        width: auto; 
+    }
+}
+
+/* |--------------- styles the navbar for mobile visitors ---------------| */
+
+/* reset the header container so that our mobile menu can go full width */
+header .container {
+    width: 100%;
+}
+
+header .container #branding {
+    width: 80%;
+}
+
+/* mobile menu needs to go full width, and be aligned center */
+nav {
+    text-align: center;
+    line-height: 70px;
+    width: 100%;
+}
+
+/* menu should be hidden on mobile */
+header nav ul {
+    display: none;
+}
+
+/* make the mobile menu have a bottom border (as they will be arranged vertically) */
+nav ul a {
+    display: block;
+    border-top: 1px solid #EAEAEB;
+    margin: 0;
+}
+
+/* hide the checkbox element that stores the state of the menu */
+#toggle {
+    display: none;
+}
+
+/* if the toggle checkbox is checked, show the menu (ul) */
+#toggle:checked~ul {
+    display: block;
+}
+
+/* override the padding that was applied in Lab 06 */
+header li {
+    padding: 0px;
+}
+
+/* suck up the bottom of the <header> by 15px, so it looks like the menu doesn't have extra margin */
+header nav ul {
+    margin-bottom: -15px;
+}
+
+/* style the hamburger element */
+nav label {
+    font-size: 26px;
+}
+
+/* set the styles for the non-mobile menu */
+@media only screen and (min-width: 768px) {
+
+    /* make the nav block size automatically rather than 100% */
+    nav {
+        width: auto;
+    }
+
+    nav label {
+        display: none;
+    }
+
+    /* snug the nav bar up to the right edge */
+    header nav {
+        margin-right: 0px;
+    }
+
+    /* make the menu horizontal again */
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* undo the mobile menu styling */
+    nav ul a {
+        border-top: 0px;
+        margin: 0;
+        padding: 0 10px;
+        /* need to have only a bit of padding for small tablets in portrait mode */
+    }
+
+    header nav ul {
+        margin-bottom: 0px;
+    }
+
+    /* expand out the header to almost full width */
+    header .container {
+        width: 95%;
+    }
+
+    header .container #branding {
+        width: auto;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    /* add some more padding for links on large tablets/desktop */
+    nav ul a {
+        padding: 0 20px;
+    }
+
+    /* restore the header container width */
+    header .container {
+        width: 80%;
+    }
+}
