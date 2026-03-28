@@ -26,6 +26,7 @@ The site represents a fictional bakery called **TASTY Bakery** and includes seve
 * Newsletter subscription form
 * Product highlight boxes with icons
 * Global header and footer
+<img width="500" height="100%" alt="tastey_bakery_homepage" src="https://github.com/user-attachments/assets/0951ec36-f788-4c83-87cd-efaa8c0fe229" />
 
 ### About (about.html)
 
@@ -54,6 +55,7 @@ The site represents a fictional bakery called **TASTY Bakery** and includes seve
   * Product selection with quantities
   * Order instructions
   * Payment method selection
+<img width="500" height="100%" alt="tastey_bakery_Order_Form" src="https://github.com/user-attachments/assets/78bd9d4b-c840-45b0-8c6e-6c05f9aedcaa" />
 
 ---
 
